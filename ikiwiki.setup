@@ -10,10 +10,10 @@
 # name of the wiki
 wikiname: blog
 # contact email for wiki
-adminemail: admin@branchable.com
+adminemail: info@libravatar.org
 # users who are wiki admins
 adminuser:
-  - http://none/
+  - http://libravatar.myid.net/
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located
