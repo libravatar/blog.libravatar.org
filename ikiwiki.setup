@@ -21,9 +21,9 @@ srcdir: /home/b-blog-libravatar-org/source
 # where to build the wiki
 destdir: /home/b-blog-libravatar-org/public_html
 # base url to the wiki
-url: http://blog-libravatar-org.branchable.com
+url: http://blog.libravatar.org
 # url to the ikiwiki.cgi
-cgiurl: http://blog-libravatar-org.branchable.com/ikiwiki.cgi
+cgiurl: http://blog.libravatar.org/ikiwiki.cgi
 # filename of cgi wrapper to generate
 cgi_wrapper: /home/b-blog-libravatar-org/public_html/ikiwiki.cgi
 # mode for cgi_wrapper (can safely be made suid)
@@ -364,6 +364,7 @@ directive_description_dir: ikiwiki/directive
 # ikiwikihosting plugin
 # list of urls that alias to the main url
 urlalias:
+  - http://blog-libravatar-org.branchable.com/
   - http://www.blog.libravatar.org/
 # openid of primary site owner
 owner: http://libravatar.myid.net/
