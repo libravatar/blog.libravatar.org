@@ -149,7 +149,7 @@ gitmaster_branch: master
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
-htmlscrubber_skip: '!postcomment(*) and !*/Discussion'
+htmlscrubber_skip: '* and !comment(*) and !*/Discussion'
 
 # inline plugin
 # enable rss feeds by default?
@@ -216,6 +216,10 @@ openid_cgiurl: http://blog-libravatar-org.branchable.com/ikiwiki.cgi
 # highlight plugin
 # types of source files to syntax highlight
 tohighlight: .c .h .cpp .pl .py Makefile:make
+# location of highlight's filetypes.conf
+filetypes_conf: /etc/highlight/filetypes.conf
+# location of highlight's langDefs directory
+langdefdir: /usr/share/highlight/langDefs
 
 # mdwn plugin
 # enable multimarkdown features?
@@ -223,10 +227,8 @@ tohighlight: .c .h .cpp .pl .py Makefile:make
 
 # po plugin
 # master language (non-PO files)
-#po_master_language:
-#  code: en
-#  name: English
-# slave languages (PO files)
+#po_master_language: en|English
+# slave languages (translated via PO files) format: ll|Langname
 #po_slave_languages:
 #  - fr|Français
 #  - es|Español
@@ -334,6 +336,7 @@ directive_description_dir: ikiwiki/directive
 # LaTeX prefix for teximg plugin
 #teximg_prefix: |
 #  \documentclass{article}
+#  \usepackage[utf8]{inputenc}
 #  \usepackage{amsmath}
 #  \usepackage{amsfonts}
 #  \usepackage{amssymb}
@@ -345,10 +348,10 @@ directive_description_dir: ikiwiki/directive
 ######################################################################
 # other plugins
 #   (aggregate, autoindex, brokenlinks, camelcase, ddate, embed, favicon,
-#    goodstuff, htmlbalance, ikiwikihosting, localstyle, missingsite,
-#    pagetemplate, parked, pingee, pinger, prettydate, recentchanges,
-#    recentchangesdiff, relativedate, rsync, sidebar, smiley,
-#    sortnaturally, tag, testpagespec, typography, underlay)
+#    flattr, goodstuff, htmlbalance, ikiwikihosting, localstyle,
+#    missingsite, pagetemplate, parked, pingee, pinger, prettydate,
+#    recentchanges, recentchangesdiff, relativedate, rsync, sidebar,
+#    smiley, sortnaturally, tag, testpagespec, typography, underlay)
 ######################################################################
 
 # aggregate plugin
@@ -360,6 +363,10 @@ directive_description_dir: ikiwiki/directive
 # camelcase plugin
 # list of words to not turn into links
 #camelcase_ignore: []
+
+# flattr plugin
+# userid or user name to use by default for Flattr buttons
+#flattr_userid: joeyh
 
 # ikiwikihosting plugin
 # list of urls that alias to the main url
@@ -374,6 +381,8 @@ owner: http://libravatar.myid.net/
 hostname: blog-libravatar-org.branchable.com
 # site creation datestamp
 created: 1281055860
+# how many days to retain logs
+#log_period: 7
 
 # parked plugin
 # An optional message explaining why this site is parked.
