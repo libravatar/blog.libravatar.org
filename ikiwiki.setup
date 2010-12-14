@@ -37,7 +37,6 @@ add_plugins:
   - lockedit
   - 404
   - comments
-  - opendiscussion
   - blogspam
   - calendar
   - sidebar
@@ -189,7 +188,7 @@ blogspam_pagespec: postcomment(*)
 
 # lockedit plugin
 # PageSpec controlling which pages are locked
-locked_pages: '*'
+locked_pages: '* and !postcomment(*)'
 
 # moderatedcomments plugin
 # PageSpec matching users or comment locations to moderate
