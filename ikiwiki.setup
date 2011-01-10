@@ -423,3 +423,5 @@ tagbase: tags
 # extra underlay directories to add
 #add_underlays:
 #  - /home/b-blog-libravatar-org/wiki.underlay
+ENV:
+ TMPDIR: /home/b-blog-libravatar-org/tmp
