@@ -14,7 +14,7 @@ adminemail: info@libravatar.org
 # users who are wiki admins
 adminuser:
   - http://libravatar.myid.net/
-  - http://openid.libravatar.org/project/
+  - http://openid.libravatar.org/project
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located
@@ -374,7 +374,7 @@ urlalias:
   - http://blog-libravatar-org.branchable.com/
   - http://www.blog.libravatar.org/
 # openid of primary site owner
-owner: http://openid.libravatar.org/project/
+owner: http://openid.libravatar.org/project
 # optional hostname of site this one was branched from
 #parent: ''
 # internal hostname of this site
