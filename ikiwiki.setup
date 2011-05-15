@@ -108,7 +108,7 @@ libdir: /home/b-blog-libravatar-org/.ikiwiki
 ENV:
   TMPDIR: /home/b-blog-libravatar-org/tmp
 # time zone name
-timezone: JEST+4
+timezone: GMT
 # regexp of normally excluded files to include
 #include: '^\.htaccess$'
 # regexp of files that should be skipped
