@@ -13,7 +13,6 @@ wikiname: blog
 adminemail: info@libravatar.org
 # users who are wiki admins
 adminuser:
-  - http://libravatar.myid.net/
   - http://openid.libravatar.org/project
 # users who are banned from the wiki
 banned_users: []
@@ -60,6 +59,7 @@ add_plugins:
   - testpagespec
   - version
   - theme
+  - gitpush
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -155,7 +155,8 @@ gitmaster_branch: master
 
 # gitpush plugin
 # git repository urls that changes are pushed to
-#git_push_to: []
+git_push_to:
+  - git@gitorious.org:libravatar/libravatar-blog.git
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
@@ -262,9 +263,9 @@ langdefdir: /usr/share/highlight/langDefs
 #  - es|Español
 #  - de|Deutsch
 # PageSpec controlling which pages are translatable
-#po_translatable_pages: '* and !*/Discussion'
+po_translatable_pages: ''
 # internal linking behavior (default/current/negotiated)
-#po_link_to: current
+po_link_to: default
 
 ######################################################################
 # misc plugins
@@ -273,9 +274,8 @@ langdefdir: /usr/share/highlight/langDefs
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, websetup,
-#    wmd)
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, websetup, wmd)
 ######################################################################
 
 # attachment plugin
@@ -297,10 +297,6 @@ comments_pagename: comment_
 #comments_allowauthor: 0
 # commit comments to the VCS
 comments_commit: 1
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
@@ -384,16 +380,16 @@ directive_description_dir: ikiwiki/directive
 
 # aggregate plugin
 # enable aggregation to internal pages?
-#aggregateinternal: 1
+aggregateinternal: 1
 # allow aggregation to be triggered via the web?
 #aggregate_webtrigger: 0
 # cookie control
-#cookiejar:
-#  file: /home/b-blog-libravatar-org/.ikiwiki/cookies
+cookiejar:
+  file: /home/b-blog-libravatar-org/.ikiwiki/cookies
 
 # autoindex plugin
 # commit autocreated index pages
-#autoindex_commit: 1
+autoindex_commit: 1
 
 # camelcase plugin
 # list of words to not turn into links
@@ -413,7 +409,7 @@ directive_description_dir: ikiwiki/directive
 
 # prettydate plugin
 # format to use to display date
-#prettydateformat: '%X, %B %o, %Y'
+prettydateformat: '%X, %B %o, %Y'
 
 # recentchanges plugin
 # name of the recentchanges page
