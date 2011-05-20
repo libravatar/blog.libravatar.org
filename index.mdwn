@@ -8,4 +8,4 @@
 actions=yes rootpage="posts"]]
 
 
-This blog is powered by [ikiwiki](http://ikiwiki.info).
+The [Libravatar](http://www.libravatar.org) blog is powered by [ikiwiki](http://ikiwiki.info) and graciously hosted by [Branchable](http://www.branchable.com)
