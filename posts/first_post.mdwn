@@ -1,2 +1,9 @@
-This is the first post to this example blog. To add new posts, just add
-files to the posts/ subdirectory, or use the web form.
+<img src="http://cdn.libravatar.org/img/nobody/128.jpg" align="right">
+
+This month marks the 1-year anniversary of when [development started](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/revision/1) on [Libravatar](http://www.libravatar.org), a new Open Source federated approach to avatar hosting on the Web.
+
+A lot has happened in that year but we didn't pay much attention to this blog, preferring instead to get the project going and hosted. We now have a [wiki](http://wiki.libravatar.org/) and a number of [libraries](http://wiki.libravatar.org/libraries/) to easily add Libravatar support to your favourite applications.
+
+After presenting the project at [Kiwi PyCon 2010](http://nz.pycon.org/2010/talks/talk/72/) and [linux.conf.au 2011](http://lca2011.linux.org.au/programme/schedule/view_talk/49?day=wednesday) ([recording](http://blip.tv/linuxconfau/freeing-the-cloud-one-service-at-a-time-4711209)), [François](http://identi.ca/fmarier) will be spreading the word at [OSCON](http://www.oscon.com/oscon2011/public/schedule/detail/18773). Feel free to come and say hi!
+
+Here's to a great 2nd year.
