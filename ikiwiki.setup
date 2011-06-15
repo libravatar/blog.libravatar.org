@@ -60,6 +60,7 @@ add_plugins:
   - version
   - theme
   - gitpush
+  - flattr
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -275,7 +276,8 @@ po_link_to: default
 ######################################################################
 # web plugins
 #   (404, attachment, comments, editdiff, edittemplate, google, goto,
-#    mirrorlist, remove, rename, repolist, search, theme, websetup, wmd)
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
+#    websetup, wmd)
 ######################################################################
 
 # attachment plugin
@@ -397,7 +399,7 @@ autoindex_commit: 1
 
 # flattr plugin
 # userid or user name to use by default for Flattr buttons
-#flattr_userid: joeyh
+flattr_userid: fmarier
 
 # parked plugin
 # An optional message explaining why this site is parked.
