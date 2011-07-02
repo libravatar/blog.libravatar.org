@@ -1,0 +1,9 @@
+The Libravatar [project](https://launchpad.net/libravatar) is part of a movement working to give control back to people, away from centralised services and the organisations running them. It addresses a simple problem: putting a face on an email address.
+
+By using our [service](https://www.libravatar.org), you can choose what picture to display next to the comments you leave on other people's blogs or next to your forum posts. Furthermore, if you own a domain name, you can choose to opt out of our service and [run our free software](http://wiki.libravatar.org/running_your_own) on your own server, on your own terms.
+
+If you run a website or are the author of a web application, you can use our [API](http://wiki.libravatar.org/api) (or one of the [available libraries](http://wiki.libravatar.org/libraries)) to serve these images to your users without having to worry about hosting them yourself.
+
+The project was inspired by the work of the [autonomous group](http://autonomo.us) and came about because we really like [Gravatar](http://www.gravatar.com) and wanted to make sure that a similar service would be part of a free-as-in-freedom network.
+
+You can find a [detailed description](http://wiki.libravatar.org/description) of Libravatar on our wiki and if it sounds like an interesting project to you, please consider [becoming a contributor](http://wiki.libravatar.org/contribute)!
