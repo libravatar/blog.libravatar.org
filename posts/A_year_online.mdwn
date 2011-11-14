@@ -1,0 +1,9 @@
+One year ago, a new freedom-respecting online service went live. That's right, [libravatar.org](https://www.libravatar.org) has just turned 1!
+
+We'd like to take this opportunity to sincerely thank [Lars Wirzenius](http://liw.fi/) and [Braawi](http://braawi.com/) who believed in the project and graciously provided hosting to get us going and present this [free-as-in-freedom](http://autonomo.us/2008/07/franklin-street-statement/) new avatar hosting approach to the World.
+
+Since the server that Libravatar is currently hosted on will be decommissioned in a few weeks, we will be transitioning to a new temporary hosting place during the **3-4 December weekend**. There will be a short outage on the main website, but the image-serving service will not be interrupted since it is run entirely on our [mirror network](http://wiki.libravatar.org/run_a_mirror/).
+
+Unfortunately this also means that Libravatar will stop being available over IPv6 until we can find a new IPv6-enabled hosting place or a suitable technical arrangement.
+
+So we are now looking for a new hosting sponsor. If you have ideas of who to talk to or if you are interested in being associated with a young Open Source project and can provide us with a small VPS, please [get in touch](mailto:hosting@libravatar.org)!
