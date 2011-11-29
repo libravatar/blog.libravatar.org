@@ -12,4 +12,4 @@
 actions=yes rootpage="posts"]]
 
 
-The [Libravatar](http://www.libravatar.org) blog is powered by [ikiwiki](http://ikiwiki.info) and graciously hosted by [Branchable](http://www.branchable.com)
+The [Libravatar](http://www.libravatar.org) blog is powered by [ikiwiki](http://ikiwiki.info) and graciously hosted by [Branchable](http://www.branchable.com). Its contents is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/).
