@@ -13,7 +13,7 @@ wikiname: Libravatar Blog
 adminemail: info@libravatar.org
 # users who are wiki admins
 adminuser:
-  - http://openid.libravatar.org/project
+- http://openid.libravatar.org/project
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located
@@ -27,40 +27,45 @@ cgiurl: http://blog.libravatar.org/ikiwiki.cgi
 # filename of cgi wrapper to generate
 cgi_wrapper: /var/www/b-blog-libravatar-org/ikiwiki.cgi
 # mode for cgi_wrapper (can safely be made suid)
-cgi_wrappermode: 0755
+cgi_wrappermode: '0755'
+# number of seconds to delay CGI requests when overloaded
+cgi_overload_delay: ''
+# message to display when overloaded (may contain html)
+cgi_overload_message: ''
 # rcs backend to use
 rcs: git
 # plugins to add to the default configuration
 add_plugins:
-  - goodstuff
-  - websetup
-  - lockedit
-  - 404
-  - comments
-  - blogspam
-  - calendar
-  - sidebar
-  - ikiwikihosting
-  - branchable
-  - recentchangesdiff
-  - attachment
-  - remove
-  - rename
-  - edittemplate
-  - favicon
-  - format
-  - fortune
-  - highlight
-  - listdirectives
-  - poll
-  - progress
-  - relativedate
-  - search
-  - testpagespec
-  - version
-  - theme
-  - gitpush
-  - flattr
+- goodstuff
+- websetup
+- lockedit
+- '404'
+- comments
+- blogspam
+- calendar
+- sidebar
+- ikiwikihosting
+- branchable
+- recentchangesdiff
+- attachment
+- remove
+- rename
+- edittemplate
+- favicon
+- format
+- fortune
+- highlight
+- listdirectives
+- poll
+- progress
+- relativedate
+- search
+- testpagespec
+- version
+- theme
+- gitpush
+- flattr
+- moderatedcomments
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -70,21 +75,21 @@ underlaydir: /usr/share/ikiwiki/basewiki
 # display verbose messages?
 #verbose: 1
 # log to syslog?
-syslog: 1
+syslog: '1'
 # create output files named page/index.html?
-usedirs: 1
+usedirs: '1'
 # use '!'-prefixed preprocessor directives?
-prefix_directives: 1
+prefix_directives: '1'
 # use page/index.mdwn source files
-indexpages: 0
+indexpages: '0'
 # enable Discussion pages?
-discussion: 0
+discussion: '0'
 # name of Discussion pages
 discussionpage: Discussion
 # generate HTML5?
-html5: 0
+html5: '0'
 # only send cookies over SSL connections?
-sslcookie: 0
+sslcookie: '0'
 # extension to use for new pages
 default_pageext: mdwn
 # extension to use for html files
@@ -96,11 +101,11 @@ timeformat: '%c'
 # put user pages below specified page
 userdir: ''
 # how many backlinks to show before hiding excess (0 to show all)
-numbacklinks: 10
+numbacklinks: '10'
 # attempt to hardlink source files? (optimisation for large files)
-hardlink: 1
-# force ikiwiki to use a particular umask
-#umask: 022
+hardlink: '1'
+# force ikiwiki to use a particular umask (keywords public, group or private, or a number)
+#umask: public
 # group for wrappers to run in
 #wrappergroup: ikiwiki
 # extra library and plugin directory
@@ -111,13 +116,13 @@ ENV:
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
-#include: '^\.htaccess$'
+#include: ^\.htaccess$
 # regexp of files that should be skipped
-#exclude: '^(*\.private|Makefile)$'
+#exclude: ^(*\.private|Makefile)$
 # specifies the characters that are allowed in source filenames
-wiki_file_chars: '-[:alnum:]+/.:_'
+wiki_file_chars: -[:alnum:]+/.:_
 # allow symlinks in the path leading to the srcdir (potentially insecure)
-allow_symlinks_before_srcdir: 0
+allow_symlinks_before_srcdir: '0'
 
 ######################################################################
 # core plugins
@@ -127,11 +132,11 @@ allow_symlinks_before_srcdir: 0
 
 # branchable plugin
 # Allow anyone to branch, check out, and copy this site?
-branchable: 1
+branchable: '1'
 # Allow anyone to git push verified changes to this site?
 #anonpush: 0
 # Display "Branchable" link on action bar?
-branchable_action: 1
+branchable_action: 0
 
 # git plugin
 # git hook to generate
@@ -139,16 +144,16 @@ git_wrapper: /home/b-blog-libravatar-org/source.git/hooks/post-update
 # shell command for git_wrapper to run, in the background
 #git_wrapper_background_command: git push github
 # mode for git_wrapper (can safely be made suid)
-#git_wrappermode: 06755
+#git_wrappermode: '06755'
 # git pre-receive hook to generate
 #git_test_receive_wrapper: /git/wiki.git/hooks/pre-receive
 # unix users whose commits should be checked by the pre-receive hook
 untrusted_committers:
-  - ikiwiki-anon
+- ikiwiki-anon
 # gitweb url to show file history ([[file]] substituted)
-historyurl: 'http://source.blog-libravatar-org.branchable.com/?p=source.git;a=history;f=[[file]];hb=HEAD'
+historyurl: http://source.blog-libravatar-org.branchable.com/?p=source.git;a=history;f=[[file]];hb=HEAD
 # gitweb url to show a diff ([[file]], [[sha1_to]], [[sha1_from]], [[sha1_commit]], and [[sha1_parent]] substituted)
-diffurl: 'http://source.blog-libravatar-org.branchable.com/?p=source.git;a=blobdiff;f=[[file]];h=[[sha1_to]];hp=[[sha1_from]];hb=[[sha1_commit]];hpb=[[sha1_parent]]'
+diffurl: http://source.blog-libravatar-org.branchable.com/?p=source.git;a=blobdiff;f=[[file]];h=[[sha1_to]];hp=[[sha1_from]];hb=[[sha1_commit]];hpb=[[sha1_parent]]
 # where to pull and push changes (set to empty string to disable)
 gitorigin_branch: origin
 # branch that the wiki is stored in
@@ -157,7 +162,7 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
-  - git@gitorious.org:libravatar/libravatar-blog.git
+- git@gitorious.org:libravatar/libravatar-blog.git
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
@@ -166,8 +171,8 @@ htmlscrubber_skip: '* and !comment(*) and !*/Discussion'
 # ikiwikihosting plugin
 # list of urls that alias to the main url
 urlalias:
-  - http://blog-libravatar-org.branchable.com/
-  - http://www.blog.libravatar.org/
+- http://blog-libravatar-org.branchable.com/
+- http://www.blog.libravatar.org/
 # openid of primary site owner
 owner: http://openid.libravatar.org/project
 # optional hostname of site this one was branched from
@@ -175,17 +180,17 @@ owner: http://openid.libravatar.org/project
 # internal hostname of this site
 hostname: blog-libravatar-org.branchable.com
 # site creation datestamp
-created: 1281055860
+created: '1281055860'
 # how many days to retain logs
 #log_period: 7
 # disable IPv6?
-ipv6_disabled: 0
+ipv6_disabled: '0'
 
 # inline plugin
 # enable rss feeds by default?
-rss: 1
+rss: '1'
 # enable atom feeds by default?
-atom: 1
+atom: '1'
 # allow rss feeds to be used?
 #allowrss: 0
 # allow atom feeds to be used?
@@ -207,7 +212,7 @@ pingurl: []
 # PageSpec of pages to check for spam
 blogspam_pagespec: postcomment(*)
 # options to send to blogspam server
-#blogspam_options: 'blacklist=1.2.3.4,blacklist=8.7.6.5,max-links=10'
+#blogspam_options: blacklist=1.2.3.4,blacklist=8.7.6.5,max-links=10
 # blogspam server XML-RPC url
 #blogspam_server: ''
 
@@ -223,7 +228,7 @@ locked_pages: '* and !postcomment(*)'
 
 # moderatedcomments plugin
 # PageSpec matching users or comment locations to moderate
-#moderate_pagespec: '*'
+moderate_pagespec: '*'
 
 # openid plugin
 # url pattern of openid realm (default is cgiurl)
@@ -254,24 +259,45 @@ langdefdir: /usr/share/highlight/langDefs
 # mdwn plugin
 # enable multimarkdown features?
 #multimarkdown: 0
+# disable use of markdown discount?
+#nodiscount: 0
 
 # po plugin
 # master language (non-PO files)
 #po_master_language: en|English
 # slave languages (translated via PO files) format: ll|Langname
 #po_slave_languages:
-#  - fr|Français
-#  - es|Español
-#  - de|Deutsch
+#- fr|Français
+#- es|Español
+#- de|Deutsch
 # PageSpec controlling which pages are translatable
 po_translatable_pages: ''
 # internal linking behavior (default/current/negotiated)
 po_link_to: default
 
 ######################################################################
-# misc plugins
-#   (filecheck)
+# special-purpose plugins
+#   (osm)
 ######################################################################
+
+# osm plugin
+# the default zoom when you click on the map link
+#osm_default_zoom: '15'
+# the icon shown on links and on the main map
+#osm_default_icon: ikiwiki/images/osm.png
+# the alt tag of links, defaults to empty
+#osm_alt: ''
+# the output format for waypoints, can be KML, GeoJSON or CSV (one or many, comma-separated)
+#osm_format: KML
+# the icon attached to a tag, displayed on the map for tagged pages
+#osm_tag_default_icon: icon.png
+# Url for the OpenLayers.js file
+#osm_openlayers_url: http://www.openlayers.org/api/OpenLayers.js
+# Layers to use in the map. Can be either the 'OSM' string or a type option for Google maps (GoogleNormal, GoogleSatellite, GoogleHybrid or GooglePhysical). It can also be an arbitrary URL in a syntax acceptable for OpenLayers.Layer.OSM.url parameter.
+#osm_layers:
+#  OSM: GoogleSatellite
+# Google maps API key, Google layer not used if missing, see https://code.google.com/apis/console/ to get an API key
+#osm_google_apikey: ''
 
 ######################################################################
 # web plugins
@@ -296,19 +322,21 @@ comments_pagename: comment_
 # Interpret directives in comments?
 #comments_allowdirectives: 0
 # Allow anonymous commenters to set an author name?
-#comments_allowauthor: 0
+comments_allowauthor: '1'
 # commit comments to the VCS
-comments_commit: 1
+comments_commit: '1'
 
 # mirrorlist plugin
 # list of mirrors
 #mirrorlist: {}
+# generate links that point to the mirrors' ikiwiki CGI
+#mirrorlist_use_cgi: 1
 
 # repolist plugin
 # URIs of repositories containing the wiki's source
 repositories:
-  - ssh://b-blog-libravatar-org@blog-libravatar-org.branchable.com/
-  - git://blog-libravatar-org.branchable.com/
+- ssh://b-blog-libravatar-org@blog-libravatar-org.branchable.com/
+- git://blog-libravatar-org.branchable.com/
 
 # search plugin
 # path to the omega cgi program
@@ -321,23 +349,23 @@ theme: actiontabs
 # websetup plugin
 # list of plugins that cannot be enabled/disabled via the web interface
 websetup_force_plugins:
-  - httpauth
-  - openid
-  - mdwn
-  - wmd
+- httpauth
+- openid
+- mdwn
+- wmd
 # list of additional setup field keys to treat as unsafe
 websetup_unsafe:
-  - url
-  - cgiurl
-  - verbose
-  - syslog
-  - usedirs
-  - prefix_directives
-  - indexpages
-  - repositories
-  - sslcookie
+- url
+- cgiurl
+- verbose
+- syslog
+- usedirs
+- prefix_directives
+- indexpages
+- repositories
+- sslcookie
 # show unsafe settings, read-only, in web interface?
-websetup_show_unsafe: 0
+websetup_show_unsafe: '0'
 
 ######################################################################
 # widget plugins
@@ -362,29 +390,37 @@ directive_description_dir: ikiwiki/directive
 # Should teximg use dvipng to render, or dvips and convert?
 #teximg_dvipng: ''
 # LaTeX prefix for teximg plugin
-#teximg_prefix: |
-#  \documentclass{article}
+#teximg_prefix: '\documentclass{article}
+#
 #  \usepackage[utf8]{inputenc}
+#
 #  \usepackage{amsmath}
+#
 #  \usepackage{amsfonts}
+#
 #  \usepackage{amssymb}
+#
 #  \pagestyle{empty}
+#
 #  \begin{document}
+#
+#'
 # LaTeX postfix for teximg plugin
-#teximg_postfix: '\end{document}'
+#teximg_postfix: \end{document}
 
 ######################################################################
 # other plugins
 #   (aggregate, autoindex, brokenlinks, camelcase, ddate, embed, favicon,
-#    flattr, goodstuff, htmlbalance, localstyle, missingsite, pagetemplate,
-#    parked, pingee, pinger, prettydate, recentchanges, recentchangesdiff,
-#    relativedate, rsync, sidebar, smiley, sortnaturally, tag,
-#    testpagespec, transient, typography, underlay)
+#    filecheck, flattr, goodstuff, htmlbalance, localstyle, missingsite,
+#    notifyemail, pagetemplate, parked, pingee, pinger, prettydate,
+#    recentchanges, recentchangesdiff, relativedate, rsync, sidebar,
+#    smiley, sortnaturally, tag, testpagespec, trail, transient,
+#    typography, underlay)
 ######################################################################
 
 # aggregate plugin
 # enable aggregation to internal pages?
-aggregateinternal: 1
+aggregateinternal: '1'
 # allow aggregation to be triggered via the web?
 #aggregate_webtrigger: 0
 # cookie control
@@ -393,7 +429,7 @@ cookiejar:
 
 # autoindex plugin
 # commit autocreated index pages
-autoindex_commit: 1
+autoindex_commit: '1'
 
 # camelcase plugin
 # list of words to not turn into links
@@ -419,7 +455,7 @@ prettydateformat: '%X, %B %o, %Y'
 # name of the recentchanges page
 recentchangespage: recentchanges
 # number of changes to track
-recentchangesnum: 100
+recentchangesnum: '100'
 
 # rsync plugin
 # command to run to sync updated pages
@@ -427,7 +463,7 @@ recentchangesnum: 100
 
 # sidebar plugin
 # show sidebar page on all pages?
-global_sidebars: 0
+global_sidebars: '0'
 
 # tag plugin
 # parent page tags are located under
@@ -435,13 +471,13 @@ tagbase: tags
 # autocreate new tag pages?
 #tag_autocreate: 1
 # commit autocreated tag pages
-tag_autocreate_commit: 1
+tag_autocreate_commit: '1'
 
 # typography plugin
 # Text::Typography attributes value
-#typographyattributes: 3
+#typographyattributes: '3'
 
 # underlay plugin
 # extra underlay directories to add
 #add_underlays:
-#  - /home/b-blog-libravatar-org/wiki.underlay
+#- /home/b-blog-libravatar-org/wiki.underlay
