@@ -75,7 +75,7 @@ underlaydir: /usr/share/ikiwiki/basewiki
 # display verbose messages?
 #verbose: 1
 # log to syslog?
-syslog: '1'
+syslog: 1
 # create output files named page/index.html?
 usedirs: '1'
 # use '!'-prefixed preprocessor directives?
@@ -136,7 +136,7 @@ branchable: '1'
 # Allow anyone to git push verified changes to this site?
 #anonpush: 0
 # Display "Branchable" link on action bar?
-branchable_action: 0
+branchable_action: '0'
 
 # git plugin
 # git hook to generate
@@ -173,6 +173,8 @@ htmlscrubber_skip: '* and !comment(*) and !*/Discussion'
 urlalias:
 - http://blog-libravatar-org.branchable.com/
 - http://www.blog.libravatar.org/
+- http://blog-libravatar-org.branchable.com/
+- http://feeds.libravatar.org/
 # openid of primary site owner
 owner: http://openid.libravatar.org/project
 # optional hostname of site this one was branched from
@@ -301,8 +303,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, google, goto,
-#    mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
+#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -325,6 +327,10 @@ comments_pagename: comment_
 comments_allowauthor: '1'
 # commit comments to the VCS
 comments_commit: '1'
+
+# getsource plugin
+# Mime type for returned source.
+#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
