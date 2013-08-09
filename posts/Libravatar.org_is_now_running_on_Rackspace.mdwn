@@ -1,0 +1,24 @@
+The Libravatar project is happy to welcome
+[Rackspace](http://www.rackspace.com) as the new infrastructure sponsor of
+the project. Thanks to their generosity, we have just
+[moved](http://feeding.cloud.geek.nz/posts/server-migration-plan/) to a new
+server and will continue to run a free instance of the Libravatar
+[server software](http://wiki.libravatar.org/running_your_own/).
+
+In particular, thank you to Jesse Noller who made this possible and to the
+customer service representative who made this experience extremely
+painless. (Yes, you get to talk to a real human being when you activate a
+Rackspace account!)
+
+We would also like to take this opportunity to give our most sincere thanks
+to [Andy Chilton](http://chilts.org) of [AppsAttic](http://appsattic.com/)
+who has provided us with hosting for the past year and a half. It is only
+with the generous support of people like Andy that we are able to operate
+this service.
+
+Finally, we are extremely grateful for the people
+([Christian](http://cweiske.de/), [Melissa](http://meldraweb.com/) and
+[Kai](http://hendry.iki.fi/)) who have volunteered to run
+[mirrors](http://wiki.libravatar.org/run_a_mirror/) in the Libravatar
+network. If you are keen to join them, please
+[get in touch](http://wiki.libravatar.org/talk_to_us/)!
