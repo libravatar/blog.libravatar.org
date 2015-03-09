@@ -24,6 +24,8 @@ destdir: /home/b-blog-libravatar-org/public_html
 url: http://blog.libravatar.org
 # url to the ikiwiki.cgi
 cgiurl: http://blog.libravatar.org/ikiwiki.cgi
+# do not adjust cgiurl if CGI is accessed via different URL
+reverse_proxy: 0
 # filename of cgi wrapper to generate
 cgi_wrapper: /var/www/b-blog-libravatar-org/ikiwiki.cgi
 # mode for cgi_wrapper (can safely be made suid)
@@ -68,6 +70,9 @@ add_plugins:
 - gitpush
 - flattr
 - moderatedcomments
+- autoindex
+- txt
+- date
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -89,7 +94,7 @@ discussion: 0
 # name of Discussion pages
 discussionpage: Discussion
 # generate HTML5?
-html5: 0
+html5: 1
 # only send cookies over SSL connections?
 sslcookie: 0
 # extension to use for new pages
@@ -113,8 +118,7 @@ hardlink: 1
 # extra library and plugin directory
 libdir: /home/b-blog-libravatar-org/.ikiwiki
 # environment variables
-ENV:
-  TMPDIR: /home/b-blog-libravatar-org/tmp
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -128,16 +132,18 @@ allow_symlinks_before_srcdir: 0
 # cookie control
 cookiejar:
   file: /home/b-blog-libravatar-org/.ikiwiki/cookies
+# set custom user agent string for outbound HTTP requests e.g. when fetching aggregated RSS feeds
+useragent: ikiwiki/3.20141017
 
 ######################################################################
 # core plugins
 #   (branchable, editpage, git, gitpush, htmlscrubber, ikiwikihosting,
-#    inline, link, meta, parentlinks)
+#    inline, link, meta, parentlinks, templatebody)
 ######################################################################
 
 # branchable plugin
 # Allow anyone to branch, check out, and copy this site?
-branchable: 1
+branchable: 0
 # Allow anyone to git push verified changes to this site?
 #anonpush: 0
 # Display "Branchable" link on action bar?
@@ -167,7 +173,7 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
-- git@gitorious.org:libravatar/libravatar-blog.git
+- git@github.com:libravatar/blog.libravatar.org.git
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
@@ -199,9 +205,9 @@ rss: 1
 # enable atom feeds by default?
 atom: 1
 # allow rss feeds to be used?
-#allowrss: 0
+allowrss: 1
 # allow atom feeds to be used?
-#allowatom: 0
+allowatom: 1
 # urls to ping (using XML-RPC) on feed update
 pingurl: []
 
@@ -220,7 +226,7 @@ pingurl: []
 blogspam_pagespec: postcomment(*)
 # options to send to blogspam server
 #blogspam_options: blacklist=1.2.3.4,blacklist=8.7.6.5,max-links=10
-# blogspam server XML-RPC url
+# blogspam server JSON url
 #blogspam_server: ''
 
 # httpauth plugin
@@ -313,8 +319,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -340,10 +346,6 @@ comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
 
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
-
 # mirrorlist plugin
 # list of mirrors
 #mirrorlist: {}
@@ -360,7 +362,7 @@ repositories:
 # path to the omega cgi program
 omega_cgi: /usr/lib/cgi-bin/omega/omega
 # use google site search rather than internal xapian index?
-google_search: 1
+google_search: 0
 
 # theme plugin
 # name of theme to enable
@@ -485,7 +487,7 @@ global_sidebars: 0
 # parent page tags are located under
 tagbase: tags
 # autocreate new tag pages?
-#tag_autocreate: 1
+tag_autocreate: 1
 # commit autocreated tag pages
 tag_autocreate_commit: 1
 
