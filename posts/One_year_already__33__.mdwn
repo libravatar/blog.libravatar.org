@@ -1,4 +1,4 @@
-<img src="https://cdn.libravatar.org/nobody/128.png" align="right">
+<img src="https://seccdn.libravatar.org/nobody/128.png" align="right">
 
 This month marks the 1-year anniversary of when [development started](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/revision/1) on [Libravatar](http://www.libravatar.org), a new Open Source federated approach to avatar hosting on the Web.
 
