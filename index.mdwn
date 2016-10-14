@@ -1,6 +1,6 @@
 [[!if test="enabled(sidebar)" then="""
 <a href="http://flattr.com/thing/311293/Libravatar" target="_blank">
-<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 
 <a href="https://www.libravatar.org/">Main Libravatar Site</a>
 [[!sidebar]]
