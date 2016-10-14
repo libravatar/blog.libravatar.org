@@ -1,7 +1,0 @@
-<img src="http://0.gravatar.com/blavatar/8575c8da26fbd7e614192d0d9cda2764?s=60" align="right">
-
-[Libravatar](https://www.libravatar.org) has joined the [Retake the Net](http://retakethe.net) project, an initiative for projects and actions related to keeping the internet free and open.
-
-Retake the Net pulls together a number of [projects](http://retakethe.net/projects/) which aim to create new and positive things to make the net a better place where people are at the center. Software freedom is an important part of this vision and that's where Libravatar comes in. We're hoping to inspire and encourage other developers to join the movement.
-
-Join [Retake the Net](http://retakethe.net) today and see if you can make it to one of our [events](http://retakethe.net/events/)!
