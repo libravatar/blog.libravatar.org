@@ -10,6 +10,8 @@ We would like to sincerely thank all of the people who have:
 - contributed [libraries](https://wiki.libravatar.org/libraries/): Chris Forbes, fr33domlover, Kang-min Liu, strk and others.
 - supported the project financially through Flattr, Gittip/Gratipay and [Liberapay](https://liberapay.com/Libravatar/).
 
-If you are interested in taking the service over, please [get in touch](https://wiki.libravatar.org/talk_to_us/) and I will look at transfering the service over to you. It's a Debian, Postgres, Django, Python stack.
+as well as Jonathan Harker and Brett Wilkins for their early code contributions and enthusiasm.
+
+If you are interested in taking the service over, please [get in touch](https://wiki.libravatar.org/talk_to_us/) and we will look at transferring the service over to you. It's a Debian, Postgres, Django, Python stack.
 
 You are welcome to coordinate on the [shutdown coordination wiki page](https://wiki.libravatar.org/shutdown-coordination/) should you wish to connect with others who might be interested in taking over the service.
