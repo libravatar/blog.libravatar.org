@@ -1,0 +1,15 @@
+After more than 7 years online, the Libravatar service will **shut down on 2018-09-01**:
+
+- If you are a user, your account will be deleted on 2018-09-01 (including backups). Should you want to export your account first, simply login and click on the export option.
+- If you use Libravatar on your site, you will need to switch to a different service before that time. Unfortunately, we do not know of an equivalent free-as-in-freedom service.
+
+We would like to sincerely thank all of the people who have:
+
+- sponsored the main server: Lars Wirzenius, Andy Chilton and [Rackspace](https://rackspace.com).
+- run mirrors: [GPLHost](http://www.gplhost.com/), [WebConverger](https://webconverger.com/), Christian Weiske, Melissa Draper.
+- contributed [libraries](https://wiki.libravatar.org/libraries/): Chris Forbes, fr33domlover, Kang-min Liu, strk and others.
+- supported the project financially through Flattr and [Liberapay](https://liberapay.com/Libravatar/).
+
+If you are interested in taking the service over, please [get in touch](https://wiki.libravatar.org/talk_to_us/) and I will look at transfering the service over to you. It's a Debian, Postgres, Django, Python stack.
+
+You are welcome to coordinate on the [shutdown coordination wiki page](https://wiki.libravatar.org/shutdown-coordination/) should you wish to connect with others who might be interested in taking over the service.
