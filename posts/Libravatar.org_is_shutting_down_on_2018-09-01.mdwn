@@ -8,7 +8,7 @@ We would like to sincerely thank all of the people who have:
 - sponsored the main server: Lars Wirzenius, Andy Chilton and [Rackspace](https://rackspace.com).
 - run mirrors: [GPLHost](http://www.gplhost.com/), [WebConverger](https://webconverger.com/), Christian Weiske, Melissa Draper.
 - contributed [libraries](https://wiki.libravatar.org/libraries/): Chris Forbes, fr33domlover, Kang-min Liu, strk and others.
-- supported the project financially through Flattr and [Liberapay](https://liberapay.com/Libravatar/).
+- supported the project financially through Flattr, Gittip/Gratipay and [Liberapay](https://liberapay.com/Libravatar/).
 
 If you are interested in taking the service over, please [get in touch](https://wiki.libravatar.org/talk_to_us/) and I will look at transfering the service over to you. It's a Debian, Postgres, Django, Python stack.
 
