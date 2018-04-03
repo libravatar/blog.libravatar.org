@@ -9,6 +9,7 @@ We would like to sincerely thank all of the people who have:
 - run mirrors: [GPLHost](http://www.gplhost.com/), [WebConverger](https://webconverger.com/), Christian Weiske, Melissa Draper.
 - contributed [libraries](https://wiki.libravatar.org/libraries/): Chris Forbes, fr33domlover, Kang-min Liu, strk and others.
 - supported the project financially through Flattr, Gittip/Gratipay and [Liberapay](https://liberapay.com/Libravatar/).
+- [translated](https://translations.launchpad.net/libravatar) Libravatar so that we could be available in 16 languages.
 
 as well as Jonathan Harker and Brett Wilkins for their early code contributions and enthusiasm.
 
