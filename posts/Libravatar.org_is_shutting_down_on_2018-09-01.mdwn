@@ -16,3 +16,5 @@ as well as Jonathan Harker and Brett Wilkins for their early code contributions 
 If you are interested in taking the service over, please [get in touch](https://wiki.libravatar.org/talk_to_us/) and we will look at transferring the service over to you. It's a Debian, Postgres, Django, Python stack.
 
 You are welcome to coordinate on the [shutdown coordination wiki page](https://wiki.libravatar.org/shutdown-coordination/) should you wish to connect with others who might be interested in taking over the service.
+
+A [retrospective](https://feeding.cloud.geek.nz/posts/looking-back-on-starting-libravatar/) has also been posted on the founder's blog.
