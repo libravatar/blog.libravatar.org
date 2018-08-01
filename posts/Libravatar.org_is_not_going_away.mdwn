@@ -1,0 +1,20 @@
+Thanks to an impressive amount of interest for the service and to several
+people stepping up to take it over, Libravatar will no longer be shutting
+down in September as previously [announced on this
+blog](https://blog.libravatar.org/posts/Libravatar.org_is_shutting_down_on_2018-09-01/).
+
+Instead, it will transition to a new codebase and infrastructure in the
+coming months. The details of the transition are still being finalize, but
+if you have website site or application using Libravatar, there should be
+no downtime or perceptible changes in the service. No changes will be
+needed on your side.
+
+Big thanks to clime, ij, kumy, nipos, ofalk, sumpfralle and tleguern who
+attended the first [IRC meeting](https://wiki.libravatar.org/shutdown-coordination/#index2h2)
+and who are working hard to modernize the codebase and take this service
+to the next level.
+
+If you want to get involved, come to the next [IRC
+meeting](https://wiki.libravatar.org/shutdown-coordination/#index2h1) and
+join our [mailing list](https://launchpad.net/~libravatar-fans) / IRC
+channel (`#libravatar` on `irc.freenode.net`).
