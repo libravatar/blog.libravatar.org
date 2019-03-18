@@ -1,0 +1,28 @@
+Almost one year ago (April 2018) Libravatar.org announced it would be going offline forever on the 1st of September 2018. Since then, many things have happened in the background in order to make Libravatar ready for the future and for many more years because we will not go offline. Libravatar is back with completely new software with more features, a new team behind it and running on a new hosting provider. Let's take a look at the details:
+
+## Software
+
+While the old version was based on Python 2 and Django 1.x, the current version is built on top of Python 3 and Django 2.1.x. All pictures are stored in the database instead of the filesystem. This makes it more complicated to run mirrors (currently not possible). The frontend is based on Bootstrap 3 and a customized version of the [Tortin theme](https://github.com/vtex/tortin) which can be found on Github. The backend is developed by ofalk and the frontend is developed by nipos. The new software is called "ivatar" and its source code can be found at [ofalk's Gitlab instance](https://git.linux-kernel.at/oliver/ivatar).
+
+## Server infrastructure
+
+The old server was sponsored by Rackspace and after the shutdown was announced we moved to a temporary virtual server sponsored by Ingo Jürgensmann. Starting on the 19th February with the new software, Libravatar.org has run on [Fedora](https://getfedora.org/) Infrastructure Cloud. They are providing this service for free to us without any expiration date and with as much power as we need. The server administration is done by clime. With the generous sponsorship of Fedora we can continue to provide a stable and reliable service to you.
+
+## Domain transfer
+
+Previously, domains libravatar.org and libravatar.com were registered on personal Francois' account at [gandi.net](https://www.gandi.net). We have kept the registrar (gandi.net) but transferred the domains to a new libravatar team account. That way, members of the new group can share ownership of the domains. The cost is...wait for it...ZERO € because gandi.net was that generous to sponsor the libravatar domains from up to ground. Thank you gandi.net! You rock!!! And thanks also to tleguern - one of our team members - who communicated it out in french (he is French but it is a well done job anyway!).
+
+Many thanks to our current and previous sponsors!
+
+## New features
+
+The new ivatar software supports more avatar generators to be used when no image is associated with the requested email hash. We added [robohash](https://robohash.org/) and [pagan](https://github.com/daboth/pagan) avatar support which are described on the API wiki page: https://wiki.libravatar.org/api/. All features of the old Libravatar are still available in the new implementation.
+
+
+## The new team
+
+For more than seven years fmarier developed and operated Libravatar alone. We thank him very much for all the work he has done in the past for creating a free and open source Gravatar alternative. While the project is growing, we need more people to take care of development, servers and questions of users. We are currently a team of five new people and fmarier helps us with some problems because he has most experience here. The new people are: ofalk (lead developer), clime (ops), tleguern (QA), sumpfralle (random things) and nipos (frontend dev).
+
+## Participate
+
+Every two weeks everyone interested in the libravatar project is invited to join our IRC meeting. Here we discuss news and our plans. You can join the #libravatar channel on chat.freenode.net at IRC or join #freenode_#libravatar:matrix.org on Matrix. Some people are always around so you can always ask there if you have questions. Complicated topics may be more suitable for the mailing list at https://launchpad.net/~libravatar-fans. A summary of our meetings is always published at https://wiki.libravatar.org/IRC_meetings/. If you have any questions or want to help us, feel free to join our channel or the mailing list. You can also reach us using email or on the social networks Mastodon, Identica and Twitter.
