@@ -10,7 +10,7 @@ The old server was sponsored by Rackspace and after the shutdown was announced w
 
 ## Domain transfer
 
-Previously, domains libravatar.org and libravatar.com were registered on personal Francois' account at [gandi.net](https://www.gandi.net). We have kept the registrar (gandi.net) but transferred the domains to a new libravatar team account. That way, members of the new group can share ownership of the domains. The cost is...wait for it...ZERO € because gandi.net was that generous to sponsor the libravatar domains from up to ground. Thank you gandi.net! You rock!!! And thanks also to tleguern - one of our team members - who communicated it out in french (he is French but it is a well done job anyway!).
+Previously, domains libravatar.org and libravatar.com were registered on personal Francois' account at [gandi.net](https://www.gandi.net). We have kept the registrar (gandi.net) but transferred the domains to a new libravatar team account. That way, members of the new group can share ownership of the domains. The cost is...wait for it...ZERO € because gandi.net was that generous to sponsor the libravatar domains from up to ground. Thank you gandi.net! You rock!!! And thanks also to tleguern - one of our team members - who communicated it out in French (a real help, since Gandi is also a French company).
 
 Many thanks to our current and previous sponsors!
 
