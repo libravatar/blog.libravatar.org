@@ -1,0 +1,16 @@
+Libravatar is back to Fedora
+----------------------------
+
+For quite some time, Libravatar was hosted at clime's personal VM because the original place where Libravatar was running was discontinued.
+
+It was an old OpenStack 5 instance and there were plans to replace it with Community Openshift - great new modern technology open for community projects.
+It happened (https://www.youtube.com/watch?v=phCHilTEQb4&ab_channel=FedoraProject) but not long after the instance was spawned, there was a big data-center
+move in Fedora during which the instance was brought down and isn't up until today.
+
+We hope that the instance will get open again but for the moment we were offered a great temporary place at Amazon AWS space belonging to Fedora.
+We gladly accepted the offer because the new server is much more performant than the old clime's one and thanks to that we are now able to serve your avatars much faster.
+
+At the same time, it's nice to have a place provided by Fedora again.
+
+Big thanks!
+Libravatar team
