@@ -95,7 +95,7 @@ discussion: 0
 # name of Discussion pages
 discussionpage: Discussion
 # use elements new in HTML5 like <section>?
-html5: 1
+html5: yes
 # only send cookies over SSL connections?
 sslcookie: 0
 # extension to use for new pages
@@ -121,7 +121,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-blog-libravatar-org/.ikiwiki
 # environment variables
-#ENV: ''
+ENV: {}
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -144,8 +144,8 @@ deterministic: 0
 
 ######################################################################
 # core plugins
-#   (branchable, editpage, git, gitpush, htmlscrubber, ikiwikihosting,
-#    inline, link, meta, parentlinks, templatebody)
+#   (admonition, branchable, editpage, git, gitpush, htmlscrubber,
+#    ikiwikihosting, inline, link, meta, parentlinks, templatebody)
 ######################################################################
 
 # branchable plugin
@@ -338,9 +338,9 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, google, goto,
-#    mirrorlist, remove, rename, repolist, search, theme, userlist,
-#    websetup, wmd)
+#   (404, attachment, comments, duckduckgo, editdiff, edittemplate,
+#    getsource, google, goto, mirrorlist, remove, rename, repolist, search,
+#    theme, userlist, websetup, wmd)
 ######################################################################
 
 # attachment plugin
@@ -364,6 +364,10 @@ comments_allowauthor: 1
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
+
+# getsource plugin
+# Mime type for returned source.
+#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
